@@ -1,6 +1,6 @@
 # Scam Bot Watch
 
-A public list of fake crypto trading-bot repos on GitHub that steal keys or run hidden malware.
+A public list of fake crypto trading-bot repos and fake or cracked software lures on GitHub that steal keys or run hidden malware.
 
 ## Support this work
 
@@ -14,7 +14,7 @@ It's reusable, so you can send any amount. There are no one-time invoices.
 
 ## What this is
 
-This is a public list of fake crypto trading-bot repositories on GitHub: Polymarket, Hyperliquid, Solana sniper, pump.fun, MEV and copy-trade bots. They steal private keys or run hidden malware. Every repo is checked read-only and reported to GitHub.
+This is a public list of scam repositories on GitHub. It covers fake crypto trading bots (Polymarket, Hyperliquid, Solana sniper, pump.fun, MEV and copy-trade bots) and fake or cracked software lures ("free" paid tools with a crack, activator or keygen). They steal private keys or run hidden malware. Every repo is checked read-only, and each entry shows whether it has been reported to GitHub.
 
 ## How to spot a fake bot
 
@@ -37,6 +37,12 @@ Repo names are plain text, not links, so this page doesn't send traffic to malwa
 |---|---|---|---|---|
 | 2026-09-27 | gulelmatthews/Polymarket-Perpetual-Bot | Confirmed malware | Hidden server api.failproxy.space (obfuscated); downloads and runs a Windows payload in memory; asks for private keys; fake stars | Yes |
 | 2026-09-27 | ArtemPavlov1994/polymarket-prediction-bot | Confirmed malware | Same loader as above (byte-identical files); reversed-hex endpoint to api.failproxy.space in support/site.py; in-memory PE loader in support/plugin.py; 14 MB bundled archive | Yes |
+
+## Known scam patterns
+
+Each pattern has a scam card in [scam-cards/](scam-cards/) with the evidence, red flags, and what to do if you already ran it. Repo names are plain text, not links.
+
+- **Fake "free/cracked" paid security software:** BarricadeHerbalist/Acunetix-Scanner-2026. It promises a cracked Acunetix 2026 with an activator and keygen. It contains no real code, sends you to a hidden-JavaScript GitHub Pages "download" page, and has an empty release with an archive password (`2026`). Verdict: likely scam. Not yet reported to GitHub. [Card](scam-cards/BarricadeHerbalist-Acunetix-Scanner-2026.md)
 
 ## How findings are checked
 
